@@ -33,7 +33,3 @@ else{
   
 }
 
-function scroll(){
-  let nv=document.getElementById("navm");
-  nv.style.background.color="white"
-}
