@@ -84,22 +84,23 @@
 
   <!-- calculator -->
   <section id="BMIcalc">
-    <div class="container container-fluid">
+    <div class="container "> 
+      <!-- here change made -->
       <div class="row rowCalc">
         <div class="col-4"></div>
         <div class="col-4 colmain">
           <div id="calcu" class=" container container-fluid form-control border-4 h-300 p-3 m-3 text-center" action="">
             <h3 class="text-center">BMI CALCULATOR</h3>
                       
-            <label class="form-control p-3 xs" for="age">AGE</label>
+            <label class=" p-3 xs" for="age">AGE</label>
             <br>
             <input class="form-control p-3" id="age" placeholder="age" type="text">
             <br>
-            <label class="form-control p-3" for="weight">WEIGHT</label>
+            <label class=" p-3" for="weight">WEIGHT</label>
             <br>
             <input class="form-control p-3" id="weight" placeholder="weight in kg" type="text">
             <br>
-            <label class="form-control p-3"  for="height">HEIGHT</label>
+            <label class=" p-3"  for="height">HEIGHT</label>
             <br>
             <input class="form-control p-3" id="height" type="text" placeholder="Height in meters">
             <br>
@@ -135,41 +136,47 @@
         <div class="col-4"></div>
       </div>
     </div>
-    <div class=" container container-fluid row rowtab mt-5">
-      <div class="col-6"><h2>BMI Scale</h2>
-
-        <div class="  container-fluid bmi-scale ">
-            <table>
-                <thead>
-                    <tr>
-                        <th>BMI Range</th>
-                        <th>Weight Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Less than 18.5</td>
-                        <td>Underweight</td>
-                    </tr>
-                    <tr>
-                        <td>18.5 to 24.9</td>
-                        <td>Normal weight</td>
-                    </tr>
-                    <tr>
-                        <td>25 to 29.9</td>
-                        <td>Overweight</td>
-                    </tr>
-                    <tr>
-                        <td>30 or greater</td>
-                        <td>Obese</td>
-                    </tr>
-                </tbody>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>BMI Scale</h2>
+    
+          <div class="bmi-scale">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>BMI Range</th>
+                  <th>Weight Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Less than 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 to 24.9</td>
+                  <td>Normal weight</td>
+                </tr>
+                <tr>
+                  <td>25 to 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30 or greater</td>
+                  <td>Obese</td>
+                </tr>
+              </tbody>
             </table>
-        </div></div>
-      <div class="col-6 ">
-        <img class="img-fluid" src="https://blog.skinnyfit.com/wp-content/uploads/2021/01/shutterstock_1610175649-scaled.jpg" width="500px" alt="">
+          </div>
+        </div>
+    
+        <div class="col-md-6">
+          <img class="img-fluid" src="https://blog.skinnyfit.com/wp-content/uploads/2021/01/shutterstock_1610175649-scaled.jpg" alt="">
+        </div>
       </div>
     </div>
+    
   </section>
 
   <!-- risks -->
@@ -184,11 +191,20 @@
         </p>
         <h4>TUTORIALS</h4>
         <div class="container-fluid row tut p-4">
-          <div class="col-3"><iframe width="300px" height="280px"  src="https://www.youtube.com/embed/OkNbacmwNp4?si=cTlkVIMBvV7kraf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="col-3"><iframe width="300px" height="280px"  src="https://www.youtube.com/embed/_KGEkwSRoF0?si=-kjgbE8q1e5lGUI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="col-3"><iframe width="300px" height="280px"  src="https://www.youtube.com/embed/z_3S2_41_FE?si=t1iWl7cSjWSuQZ9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="col-3"><iframe width="300px" height="280px"  src="https://www.youtube.com/embed/qy8rtqw5qvk?si=ykJuQMnzCdpa81pi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <div class="col-md-3 mb-4">
+            <iframe width="100%" height="280px" src="https://www.youtube.com/embed/OkNbacmwNp4?si=cTlkVIMBvV7kraf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-3 mb-4">
+            <iframe width="100%" height="280px" src="https://www.youtube.com/embed/_KGEkwSRoF0?si=-kjgbE8q1e5lGUI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-3 mb-4">
+            <iframe width="100%" height="280px" src="https://www.youtube.com/embed/z_3S2_41_FE?si=t1iWl7cSjWSuQZ9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-3 mb-4">
+            <iframe width="100%" height="280px" src="https://www.youtube.com/embed/qy8rtqw5qvk?si=ykJuQMnzCdpa81pi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </div>
+        
       </div>
     </div>
   </section>
