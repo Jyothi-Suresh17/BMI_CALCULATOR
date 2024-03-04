@@ -76,48 +76,52 @@
   </section>
 
   <!-- BMI Calculator Section -->
-  <section id="BMIcalc">
-    <div class="container">
-      <div class="row rowCalc">
-        <div class="col-12 col-md-4"></div>
-        <div class="col-12 col-md-4 colmain">
-          <div id="calcu" class="container container-fluid form-control border-4 h-300 p-3 m-3 text-center" action="">
-            <h3 class="text-center">BMI CALCULATOR</h3>
-            <label class="p-3 xs" for="age">AGE</label><br>
-            <input class="form-control p-3" id="age" placeholder="age" type="text"><br>
-            <label class="p-3" for="weight">WEIGHT</label><br>
-            <input class="form-control p-3" id="weight" placeholder="weight in kg" type="text"><br>
-            <label class="p-3" for="height">HEIGHT</label><br>
-            <input class="form-control p-3" id="height" type="text" placeholder="Height in meters"><br><br>
-            <button onclick="bmiCalculate()" class="btn btn-success btn-xs d-none d-md-block">CALCULATE</button><br><br>
-            <label for="result" class="me-3">RESULT</label>
-            <input class="form-control" id="result" type="text" placeholder="Result">
-          </div>
-          <div class="container form-control container-fluid bmiresult text-center m-4">
-            <h2>RESULT</h2>
-            <div class="row color">
-              <div class="col-2"></div>
-              <div class="col-4">
-                <p>Under weight </p>
-                <p>Normal Weight </p>
-                <p>Over Weight </p>
-                <p>Obese </p>
-              </div>
-              <div class="col-4">
-                <p><button class="btn btn-info">BLUE</button></p>
-                <p><button class="btn btn-success">GREEN</button></p>
-                <p><button class="btn btn-warning">YELLOW</button></p>
-                <p><button class="btn btn-danger">RED</button></p>
-              </div>
-              <div class="col-2"></div>
-            </div>
-            <h2 id="bmireslt"> </h2>
-          </div>
+  <!-- BMI Calculator Section -->
+<section id="BMIcalc">
+  <div class="container">
+    <div class="row rowCalc">
+      <div class="col-12 col-md-3"></div>
+      <div class="col-12 col-md-6 colmain">
+        <div id="calcu" class="container form-control h-100 p-3 m-3 text-center" action="">
+          <h3 class="text-center">BMI CALCULATOR</h3>
+          <label class="p-3 xs" for="age">AGE</label><br>
+          <input class="form-control p-3" id="age" placeholder="age" type="text"><br>
+          <label class="p-3" for="weight">WEIGHT</label><br>
+          <input class="form-control p-3" id="weight" placeholder="weight in kg" type="text"><br>
+          <label class="p-3" for="height">HEIGHT</label><br>
+          <input class="form-control p-3" id="height" type="text" placeholder="Height in meters"><br><br>
+          <button onclick="bmiCalculate()" class="btn btn-success btn-xs d-block d-md-none">CALCULATE</button>
+          <button onclick="bmiCalculate()" class="btn btn-success btn-md d-none d-md-block">CALCULATE</button><br><br>
+          <label for="result" class="me-3">RESULT</label>
+          <input class="form-control" id="result" type="text" placeholder="Result">
         </div>
-        <div class="col-12 col-md-4"></div>
+        <div class="container form-control container-fluid bmiresult text-center m-4">
+          <h2>RESULT</h2>
+          <div class="row color">
+            <div class="col-2"></div>
+            <div class="col-4">
+              <p>Under weight </p>
+              <p>Normal Weight </p>
+              <p>Over Weight </p>
+              <p>Obese </p>
+            </div>
+            <div class="col-4">
+              <p><button class="btn btn-info">BLUE</button></p>
+              <p><button class="btn btn-success">GREEN</button></p>
+              <p><button class="btn btn-warning">YELLOW</button></p>
+              <p><button class="btn btn-danger">RED</button></p>
+            </div>
+            <div class="col-2"></div>
+          </div>
+          <h2 id="bmireslt"> </h2>
+        </div>
       </div>
+      <div class="col-12 col-md-3"></div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- BMI Scale Section -->
   <section id="bmiScale">
