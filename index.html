@@ -27,7 +27,7 @@
 <body>
   <div id="navm" class="div mainnav">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="">
         <a class="navbar-brand" href="#"><img src="./images/yc.png" width="120px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,10 +51,12 @@
       </div>
     </nav>
   </div>
+<div class="container">
+ 
 
   <!-- BMI Section -->
   <section id="Maincontent">
-    <div class="container">
+    <div class="">
       <div class="contentDiv1 text-center m-5">
         <h2>What is BMI?<br><br></h2>
         <p>
@@ -78,11 +80,13 @@
   <!-- BMI Calculator Section -->
   <!-- BMI Calculator Section -->
 <section id="BMIcalc">
-  <div class="container">
+  <div class="">
     <div class="row rowCalc">
       <div class="col-12 col-md-3"></div>
       <div class="col-12 col-md-6 colmain">
-        <div id="calcu" class="container form-control h-100 p-3 m-3 text-center" action="">
+
+        <!-- col-12 in extra small screens and above medium we change to col-md-6 -->
+        <div id="calcu" class=" form-control p-3  text-center" action="">
           <h3 class="text-center">BMI CALCULATOR</h3>
           <label class="p-3 xs" for="age">AGE</label><br>
           <input class="form-control p-3" id="age" placeholder="age" type="text"><br>
@@ -95,7 +99,9 @@
           <label for="result" class="me-3">RESULT</label>
           <input class="form-control" id="result" type="text" placeholder="Result">
         </div>
-        <div class="container form-control container-fluid bmiresult text-center m-4">
+<br><br><br>
+
+        <div class=" form-control bmiresult text-center ">
           <h2>RESULT</h2>
           <div class="row color">
             <div class="col-2"></div>
@@ -113,8 +119,11 @@
             </div>
             <div class="col-2"></div>
           </div>
+          <br>
           <h2 id="bmireslt"> </h2>
         </div>
+
+
       </div>
       <div class="col-12 col-md-3"></div>
     </div>
@@ -125,7 +134,7 @@
 
   <!-- BMI Scale Section -->
   <section id="bmiScale">
-    <div class="container mt-5">
+    <div class=" mt-5">
       <div class="row">
         <div class="col-12 col-md-6">
           <h2>BMI Scale</h2>
@@ -167,12 +176,12 @@
 
   <!-- Risks Section -->
   <section id="risk">
-    <div class="container container-fluid text-center">
+    <div class=" text-center">
       <h2>Let's maintain a healthy Weight....</h2>
       <div class="weight m-3">
         <p>Maintaining a healthy weight is essential for overall well-being and can significantly impact your health in positive ways. Always remember that achieving and maintaining a healthy weight is a gradual process, and small, sustainable changes over time are more likely to lead to long-term success. It's important to focus on overall health rather than just the number on the scale, and to adopt habits that contribute to a healthy and balanced lifestyle. If you have specific health concerns or weight management needs, it's advisable to consult with a healthcare professional for personalized guidance.</p>
         <h4>TUTORIALS</h4>
-        <div class="container-fluid row tut p-4">
+        <div class=" row tut p-4">
           <div class="col-md-3 mb-4">
             <iframe width="100%" height="280px" src="https://www.youtube.com/embed/OkNbacmwNp4?si=cTlkVIMBvV7kraf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
@@ -189,6 +198,9 @@
       </div>
     </div>
   </section>
+
+
+</div>
 
   <!-- Footer Section -->
   <footer style="background-color:#0097b2;" class="text-center text-lg-start">
